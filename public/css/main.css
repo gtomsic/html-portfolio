@@ -228,6 +228,42 @@ main {
   background: #a4a4a4;
   color: #e5e7eb; }
 
+.form {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr); }
+  .form .left-side {
+    display: flex;
+    flex-direction: column; }
+    .form .left-side .input-label {
+      display: flex;
+      flex-direction: column;
+      margin: 0.5rem 0; }
+      .form .left-side .input-label label {
+        display: block; }
+      .form .left-side .input-label input {
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem; }
+  .form .right-side {
+    display: flex;
+    flex-direction: column; }
+    .form .right-side textarea {
+      margin: 0.5rem 0;
+      min-height: 100%;
+      font-size: 1.6rem;
+      padding: 0.5rem 1rem; }
+    .form .right-side button {
+      padding: 0.5rem 1rem;
+      font-size: 1.6rem;
+      background: black;
+      border: none;
+      border-radius: 0.5rem;
+      color: #e5e7eb; }
+      .form .right-side button:hover {
+        background: #00afb9;
+        transition: all 0.3s ease-out;
+        cursor: pointer; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -274,7 +310,15 @@ main {
     .about-info .bio-image {
       max-width: 250px; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  main#contact {
+    padding-top: 10vh;
+    text-align: left;
+    min-height: 100%;
+    position: relative;
+    margin-bottom: 10vh; }
+  .form {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -283,5 +327,10 @@ main {
     padding-top: 10vh; }
   main#work {
     padding-top: 10vh; }
+  main#contact {
+    padding-top: 10vh;
+    text-align: left;
+    min-height: 100%;
+    margin-bottom: 10vh; }
   .projects {
     grid-template-columns: 1fr; } }

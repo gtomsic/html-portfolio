@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">My Work</a>
+          </li>
+          <li class="nav-item current">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contact">
+      <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
+      <h3 class="sm-heading">Fill up the contact form to reach me</h3>
+      <form class="form">
+        <div class="left-side">
+          <div class="input-label">
+            <label for="firstName">First Name</label>
+            <input id="firstName" name="firstName" type="text" required />
+          </div>
+          <div class="input-label">
+            <label for="lastName">Last Name</label>
+            <input id="lastName" name="lastName" type="text" required />
+          </div>
+          <div class="input-label">
+            <label for="company">Compony Name</label>
+            <input id="company" name="company" type="text" required />
+          </div>
+          <div class="input-label">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+        </div>
+        <div class="right-side">
+          <label for="message">Message</label>
+          <textarea name="message" id="message"></textarea>
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer id="main-footer">
+      Copyright &copy; www.gabrieltomsic.com 2022
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

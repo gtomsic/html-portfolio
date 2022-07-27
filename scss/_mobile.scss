@@ -57,6 +57,16 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  main#contact {
+    padding-top: 10vh;
+    text-align: left;
+    min-height: 100%;
+    position: relative;
+    margin-bottom: 10vh;
+  }
+  .form {
+    grid-template-columns: 1fr;
+  }
 }
 // Small screen
 @include mediaSm {
@@ -68,6 +78,12 @@
   }
   main#work {
     padding-top: 10vh;
+  }
+  main#contact {
+    padding-top: 10vh;
+    text-align: left;
+    min-height: 100%;
+    margin-bottom: 10vh;
   }
   .projects {
     grid-template-columns: 1fr;
