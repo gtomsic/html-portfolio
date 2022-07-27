@@ -6,12 +6,12 @@
   box-sizing: border-box;
 }
 
-$primary: #1f1f1f;
+$primary: #242424;
 $secondary: #fdba74;
 $positive: #00afb9;
 $accent: #818cf8;
 $danger: #ef4444;
-$dark: #171717;
+$dark: #212121;
 $gray: #6b7280;
 $light: #fafafa;
 $lighter: #e5e7eb;
@@ -43,6 +43,15 @@ $background-opacity: 0.9;
         z-index: -1;
       }
     }
+  }
+}
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #212121;
+  } @else {
+    @return #e5e7eb;
   }
 }
 

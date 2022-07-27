@@ -36,10 +36,25 @@
       height: 150px;
     }
   }
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job-1"
+      "job-2"
+      "job-3";
+    grid-template-columns: 1fr;
+    .bio-image {
+      max-width: 250px;
+    }
+  }
 }
 // Small screen
 @include mediaSm {
-  main#home {
+  main {
     padding: 1rem;
+  }
+  main#about {
+    padding-top: 10vh;
   }
 }
