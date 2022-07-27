@@ -30,6 +30,45 @@ header {
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
 
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden; }
+  .menu.show {
+    visibility: visible; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    margin: 0;
+    padding: 0;
+    background: rgba(18, 18, 18, 0.9);
+    list-style: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.3s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: rgba(31, 31, 31, 0.9);
+    transition: all 0.3s ease-out;
+    transform: translate3d(0, 100%, 0); }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .portrait {
+      width: 200px;
+      height: 200px;
+      background: url("../img/portrait.jpg");
+      background-size: cover;
+      border-radius: 50%;
+      border: 3px solid #00afb9; }
+
 body {
   background: #1f1f1f;
   font-family: "Albert Sans", "Courier New", Courier, monospace;
@@ -42,7 +81,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: top;
-    background-repeat: none; }
+    background-repeat: no-repeat; }
     body#bg-img::after {
       content: "";
       position: absolute;
