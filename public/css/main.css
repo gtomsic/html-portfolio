@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Albert Sans", "Courier New", Courier, monospace;
+  line-height: 1.5;
+  background-color: #1f1f1f;
+  color: #fafafa; }
+  body#bg-img {
+    background: url("images/bg.jpg"); }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 6rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background-color: rgba(39, 39, 39, 0.5);
+    display: inline-block; }
+
+a {
+  color: #fafafa;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2; }
+
+.text-secondary {
+  color: #00afb9; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #00afb9;
+        transition: all 0.3s ease-out; }
+  main #home {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh; }
