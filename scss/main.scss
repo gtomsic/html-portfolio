@@ -1,43 +1,14 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-$primary: #1f1f1f;
-$secondary: #fdba74;
-$positive: #00afb9;
-$accent: #818cf8;
-$danger: #ef4444;
-$dark: #171717;
-$gray: #6b7280;
-$light: #fafafa;
-$lighter: #e5e7eb;
-
-$show-home-image: true;
-$home-image: url("images/bg.jpg");
-$background-opacity: 0.9;
-
-@mixin easeOut {
-  transition: all 0.3s ease-out;
-}
-
-@mixin background {
-  @if $show-home-image {
-    &#bg-img {
-      background: $home-image;
-    }
-  }
-}
+@import "config";
+@import "menu";
 
 body {
   @include background;
+  background: $primary;
   font-family: "Albert Sans", "Courier New", Courier, monospace;
   line-height: 1.5;
-  background-color: $primary;
   color: $light;
+  height: 100%;
+  margin: 0;
 }
 
 // Headings
@@ -86,7 +57,7 @@ main {
       }
     }
   }
-  #home {
+  &#home {
     overflow: hidden;
     display: flex;
     flex-direction: column;
